@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ss10_task6_quanLySanPham</title>
+</head>
+<body>
+
+<h>STORAGE MANAGE</h>
+<br/><br/>
+<h>Add new product</h>
+<br/><br/>
+<div>
+    <form action = "javascrip: void(0);" onsubmit = "storage.add()">
+        <input id = "productAdd" type = "text" placeholder= "Product's name"></input>
+        <br/><br/>
+        <input type = "submit" value = Add></input>
+        <br/><br/>
+    </form>
+</div>
+<h>Manage products</h>
+<br/><br/>
+<table>
+    <tr>
+        <th>Product name</th>
+        <th id = "product count"></th>
+    </tr>
+    <tbody id = "productDisplay"></tbody>
+</table>
+
+<script src = storage.js></script>
+<script src = main.js></script>
+
+<div id = "editArea" style = "display: none;">
+    <br/>
+    <h>Edit product</h>
+    <br/><br/>
+    <div >
+        <form id = "editSave" action = "javascript: void(0);">
+            <input id = "editProduct" type = "text"></input>
+            <br/><br/>
+            <input type = "submit" value = "Edit"></input>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
